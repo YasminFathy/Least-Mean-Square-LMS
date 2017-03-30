@@ -1,1 +1,1 @@
-# Least-Mean-Squares-LMS-
+# Least-Mean-Squares(LMS)
