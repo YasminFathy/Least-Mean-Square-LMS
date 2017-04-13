@@ -30,12 +30,14 @@ function [y,alpha] = generateAR(obs_num, order,lower_alpha,upper_alpha,lower_y,u
     % generate the values of y(n) where n= 1,2.. order
     % between specific range e.g ]1, 5[
     y = (upper_y-lower_y).*rand(order,1)+lower_y;
+    %y=[0,0,0];
     temp = 0;
     for t=order+1:obs_num
         for i=1:order
             temp = temp+alpha(i)*y(t-i);
         end
             y(t) = temp+eps(t);
+        temp=0;
     end
     % plot AR-order
     fig = figure;
