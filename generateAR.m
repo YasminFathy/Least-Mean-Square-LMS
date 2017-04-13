@@ -17,6 +17,14 @@
 % [x,alpha] = generateAR(1000,3,-0.5, 0.5,1, 5)
 %%
 function [y,alpha] = generateAR(obs_num, order,lower_alpha,upper_alpha,lower_y,upper_y)
+    if nargin<6
+        obs_num = 1000;
+        order =3;
+        lower_alpha = -0.5;
+        upper_alpha = 0.5;
+        lower_y = 1;
+        upper_y = 5;
+    end        
     % generate noise as NID (noraml and independely distributed) params
     % where mu =0 and sigma = 1
     eps = normrnd(0,1,obs_num,1); % eps is vector of dim obs_numx1
