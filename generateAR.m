@@ -17,8 +17,8 @@
 % [x,alpha] = generateAR(1000,3,-0.5, 0.5,1, 5)
 %%
 function [y,alpha] = generateAR(obs_num, order,lower_alpha,upper_alpha,lower_y,upper_y)
-    clear
-    clc
+    %clear
+    %clc
     if nargin<6
         obs_num = 1000;
         order =3;
