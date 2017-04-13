@@ -46,5 +46,5 @@ function [weights, w] = LMS(N, mu, order)
     subplot(2,2,[3 4]),plot([1:N-order],e), title('error'),
     xlabel('x'), ylabel('y'), grid on;
     % save figure
-    savefig(fig,'figs/LMS.fig')
+    savefig(fig,'LMS.fig')
 end
