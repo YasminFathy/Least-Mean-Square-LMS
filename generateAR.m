@@ -55,5 +55,5 @@ function [y,alpha] = generateAR(obs_num, order,lower_alpha,upper_alpha,lower_y,u
     xlabel('x');
     ylabel('y');
     title(['Auto-Regression-' num2str(order)]);
-    savefig(fig, 'figs/generateAR.fig')
+    savefig(fig,'generateAR.fig')
 end
