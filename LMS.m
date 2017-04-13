@@ -1,4 +1,3 @@
-
 %%
 % This is an implementation of LMS
 % To test LMS if it works correctly:
@@ -16,7 +15,6 @@
 % test function
 % [weights, w]= LMS(1000, 0.001, 3)
 %%
-
 function [weights, w] = LMS(N, mu, order)
     %clear
     %clc
